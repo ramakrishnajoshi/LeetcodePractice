@@ -17,8 +17,8 @@ fun main() {
     //Using sorted array & diff method : Time = ForSorting -> O(nLog) & algorithm O(n), Space = O(1)
     //Using HashMap/Hashtable : Time = O(n) Space = O(n)
 
-    //println(findTwoSumOnSortedArray())
-    println(twoSumUsingHashMap())
+    println(findTwoSumOnSortedArray())
+    //println(twoSumUsingHashMap())
 }
 
 
@@ -95,7 +95,7 @@ fun pythagorasNumbers() {
     //a^2 + b^2 = c^2
 
     val inputList = arrayListOf<Int>(13, 3, 5, 12, 16)
-    inputList.sort()
+    inputList.sort() // 3, 5, 12, 13, 16
 
     for ((index, value) in inputList.withIndex()) {
 

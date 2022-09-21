@@ -7,9 +7,9 @@ fun main() {
     val mutableNumberList1 = mutableListOf<Int>(1, 2, 3)
     val mutableNumberList2 = arrayListOf<Int>(1, 2, 3)
     val fixedNumberList = listOf<Int>(1, 2, 3)
-//val i = sequenceOf()
+    //val i = sequenceOf()
     mutableNumberList1[2] = 8
-    mutableNumberList2[2] = 8
+    mutableNumberList2[2] = 8 //this is also possible
     //fixedNumberList[1] = 5    //can not do this operation- compile time error
 
     //print("TowSum " + twoNumberSum(arrayListOf(3,5,-4,8, 11,1,-1,6), 10))
@@ -48,12 +48,16 @@ fun testingArrays() {
     //val mutableCharList = Arrays.asList(inputCharArray)   - Java Way
     //val mutableCharList = listOf(inputCharArray)          - Kotlin Way
 
+    println(inputCharArray)
     println(Arrays.toString(inputCharArray))  //Java way
     println(inputCharArray.contentToString()) //Kotlin Way
 
     val inputIntArray = intArrayOf(1, 2, 3, 4)
     println(inputIntArray[0])
-    println(inputIntArray.contentToString())
+    println(inputIntArray) // prints hashcode
+    println(inputIntArray.contentToString()) // prints [1, 2, 3, 4]
+    val test = inputIntArray.contentToString()
+    println(test[0]) // prints [
 
 
     val inputIntArray2 = Array(5, {i -> i*5})
